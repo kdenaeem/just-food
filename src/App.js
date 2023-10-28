@@ -48,9 +48,12 @@ const App = () => {
         {menuItems.map((item) => {
           return (
             <li key={item.id} className="liApp">
-              {item.name} - {item.quantity}
-</li> );
-})} </ul></Fragment>)}
+              {item.name} - {item.quantity} </li> 
+              );
+          })} 
+        </ul>
+      </Fragment>
+      )}
      {isChooseFoodPage && <Foods foodItems={menuItems}></Foods>}
 </div> );
 };
